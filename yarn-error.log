@@ -1,8 +1,8 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/Cellar/yarn/1.5.1/libexec/bin/yarn.js test
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.5.1/libexec/bin/yarn.js run dev-server
 
 PATH: 
-  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/kelokchan/Library/Android/sdk/emulator:/Users/kelokchan/Library/Android/sdk/tools:/Users/kelokchan/Library/Android/sdk/platform-tools:/Users/kelokchan/Library/Android/sdk/emulator:/Users/kelokchan/Library/Android/sdk/tools:/Users/kelokchan/Library/Android/sdk/platform-tools
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/kelokchan/Library/Android/sdk/emulator:/Users/kelokchan/Library/Android/sdk/tools:/Users/kelokchan/Library/Android/sdk/platform-tools:/Users/kelokchan/Library/Android/sdk/emulator:/Users/kelokchan/Library/Android/sdk/tools:/Users/kelokchan/Library/Android/sdk/platform-tools
 
 Yarn version: 
   1.5.1
