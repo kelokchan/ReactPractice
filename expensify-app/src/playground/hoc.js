@@ -3,34 +3,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const Info = (props) => (
+const Info = props => (
   <div>
     <h1>Admin info</h1>
     <p>{props.info}</p>
   </div>
 );
 
-const withAdminWarning = (WrappedComponent) => {
-  return (props) => (
+const withAdminWarning = WrappedComponent => {
+  return props => (
     <div>
       {props.isAdmin && <p>This is private info.</p>}
-      <WrappedComponent {...props}/>
+      <WrappedComponent {...props} />
     </div>
-  )
+  );
 };
 
-const requireAuthentication = (WrappedComponent) => {
-  return (props) => (
-    <div>
-      {props.isAuthenticated ? (
-        <WrappedComponent {...props} />
-      ) : (
-        <p>You are logged in</p>
-      )}
-    </div>
-  )
-}
+const requireAuthentication = WrappedComponent => {
+  return props => <div>{props.isAuthenticated ? <WrappedComponent {...props} /> : <p>You are not logged in</p>}</div>;
+};
 
 const AuthInfo = requireAuthentication(Info);
 
-ReactDOM.render(<AuthInfo isAuthenticated={true} info="this is only viewed by admin"/>, document.getElementById('app'));
+ReactDOM.render(
+  <AuthInfo isAuthenticated={true} info="this is only viewed by admin" />,
+  document.getElementById('app')
+);

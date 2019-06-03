@@ -1,6 +1,6 @@
 import { createStore, combineReducers } from 'redux';
 import expensesReducer from '../reducers/expenses';
-import filtersReducer from '../reducers/filters'
+import filtersReducer from '../reducers/filters';
 
 export default () => {
   const store = createStore(
@@ -12,5 +12,4 @@ export default () => {
   );
 
   return store;
-}
-
+};

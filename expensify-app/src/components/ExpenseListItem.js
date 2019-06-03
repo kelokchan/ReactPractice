@@ -6,10 +6,10 @@ const ExpenseListItem = ({ id, description, amount, createdAt }) => (
     <Link to={`/edit/${id}`}>
       <h3>{description}</h3>
     </Link>
-    <p>${amount} - {createdAt}</p>
+    <p>
+      {amount} - {createdAt}
+    </p>
   </div>
 );
-
-// const {description, amount, note, createdAt} = props.expense;
 
 export default ExpenseListItem;
